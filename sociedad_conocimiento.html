@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sociedad del Conocimiento</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -19,3 +15,117 @@
       flex-direction: column;
       min-height: 100vh;
     }
+
+    header {
+      background: #FFB6B9;
+      padding: 1rem 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #CBAACB;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .menu ul li a:hover,
+    .menu ul li a.active {
+      background-color: #B5EAD7;
+      color: #3a3a3a;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #FFDAC1;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero {
+      background-color: #CBAACB;
+      color: #fff;
+      padding: 2rem 1rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1, h2 { color: #3a3a3a; margin-bottom: 1rem; }
+    p, li { font-size: 1.1rem; margin-bottom: 1rem; }
+
+    ul { list-style-type: square; padding-left: 2rem; }
+
+    footer {
+      background: #B5EAD7;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #3a3a3a;
+      margin-top: auto;
+    }
+
+    @media(max-width: 600px) {
+      .menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autor.html">Sobre la autora</a></li>
+        <li><a href="sociedad_contemporanea.html">Sociedad Contemporánea</a></li>
+        <li><a href="sociedad_informacion.html">Sociedad de la Información</a></li>
+        <li><a href="sociedad_conocimiento.html" class="active">Sociedad del Conocimiento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Sociedad del Conocimiento</h1>
+      <p>Una sociedad basada en la producción, uso y circulación del saber.</p>
+    </section>
+
+    <section>
+      <h2>¿Qué es?</h2>
+      <p>Es una evolución de la sociedad de la información, donde el conocimiento generado por las personas es el recurso más importante para el desarrollo social, económico y educativo.</p>
+
+      <h2>Características</h2>
+      <ul>
+        <li>Producción de conocimiento científico y técnico.</li>
+        <li>Innovación como motor de cambio.</li>
+        <li>Educación como proceso permanente y activo.</li>
+        <li>Colaboración global e interconectada.</li>
+        <li>Acceso y aplicación del conocimiento para resolver problemas.</li>
+      </ul>
+
+      <h2>Educación en esta sociedad</h2>
+      <p>La educación superior debe generar conocimiento nuevo, formar investigadores y profesionales capaces de transformar su entorno. Las universidades son centros clave de pensamiento, investigación e innovación.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dayeli Macas - Tecnología Educativa en Educación Superior</p>
+  </footer>
+</body>
+</html>
