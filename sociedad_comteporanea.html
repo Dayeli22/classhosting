@@ -5,27 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sociedad Contemporánea</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #FFF0F6;
       color: #3a3a3a;
+      margin: 0;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
-
     header {
       background: #FFB6B9;
       padding: 1rem 0;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     }
-
     .menu ul {
       list-style: none;
       display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    .menu ul li a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #CBAACB;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      display: block;
+    }
+    .menu ul li a:hover,
+    .menu ul li a.active {
+      background-color: #B5EAD7;
+      color: #3a3a3a;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #FFDAC1;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .hero {
+      background-color: #CBAACB;
+      color: #fff;
+      padding: 2rem 1rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 2rem;
+    }
+    footer {
+      background: #B5EAD7;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #3a3a3a;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autor.html">Sobre la autora</a></li>
+        <li><a href="sociedad_contemporanea.html" class="active">Sociedad Contemporánea</a></li>
+        <li><a href="sociedad_informacion.html">Sociedad de la Información</a></li>
+        <li><a href="sociedad_conocimiento.html">Sociedad del Conocimiento</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Sociedad Contemporánea</h1>
+      <p>Una mirada a la realidad actual y sus desafíos para la educación.</p>
+    </section>
+    <section>
+      <h2>¿Qué es la sociedad contemporánea?</h2>
+      <p>La sociedad contemporánea se caracteriza por constantes transformaciones sociales, culturales, políticas y tecnológicas. Es un tiempo marcado por la globalización, la conectividad digital y la necesidad de adaptación continua.</p>
+      <h2>Principales características</h2>
+      <ul>
+        <li>Globalización e interdependencia entre países y culturas.</li>
+        <li>Avances tecnológicos acelerados y cambios laborales.</li>
+        <li>Participación social activa y nuevos movimientos ciudadanos.</li>
+        <li>Transformación de valores y diversidad cultural.</li>
+        <li>Mayor conciencia ambiental y responsabilidad social.</li>
+      </ul>
+      <h2>Impacto en la educación</h2>
+      <p>La educación en la sociedad contemporánea enfrenta el reto de formar personas críticas, creativas y comprometidas con el cambio. Es fundamental fomentar habilidades digitales, pensamiento reflexivo y una visión ética del mundo.</p>
+      <p>Los docentes tienen un rol esencial como mediadores del conocimiento, promotores del diálogo y guías para enfrentar los desafíos del presente.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Dayeli Macas - Tecnología Educativa en Educación Superior</p>
+  </footer>
+</body>
+</html>
