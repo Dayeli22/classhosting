@@ -1,38 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sobre la autora - Dayeli Macas</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre la autora - Dayeli Macas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #FFF0F6;
-            color: #3a3a3a;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #FFF0F6;
+      color: #3a3a3a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-        header {
-            background: #FFB6B9;
-            padding: 1rem 0;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-        }
+    header {
+      background: #FFB6B9;
+      padding: 1rem 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
 
-        .menu ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
 
-        .menu ul li a {
-            text-decoration: none;
-            color: #ff
+    .menu ul li a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #CBAACB;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .menu ul li a:hover,
+    .menu ul li a.active {
+      background-color: #B5EAD7;
+      color: #3a3a3a;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #FFDAC1;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero {
+      background-color: #CBAACB;
+      color: #fff;
+      padding: 2rem 1rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1, h2 {
+      color: #3a3a3a;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #B5EAD7;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #3a3a3a;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autor.html" class="active">Sobre la autora</a></li>
+        <li><a href="sociedad_contemporanea.html">Sociedad Contemporánea</a></li>
+        <li><a href="sociedad_informacion.html">Sociedad de la Información</a></li>
+        <li><a href="sociedad_conocimiento.html">Sociedad del Conocimiento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Dayeli Macas</h1>
+      <p>Docente universitaria comprometida con la innovación educativa.</p>
+    </section>
+
+    <section class="content">
+      <h2>Sobre mí</h2>
+      <p>Mi nombre es <strong>Dayeli Macas</strong>. Soy docente de la Universidad Técnica de Machala (UTMACH), especializada en Lengua y Literatura. Me apasiona la educación y la tecnología como herramientas de cambio.</p>
+
+      <h2>Mi visión</h2>
+      <p>Transformar la educación a través de metodologías activas, pensamiento crítico, inclusión y herramientas digitales adaptadas a las nuevas generaciones.</p>
+
+      <h2>Frase favorita</h2>
+      <blockquote style="background: #fff; padding: 1rem; border-left: 5px solid #FFB6B9; border-radius: 10px;">
+        “Educar es un acto de amor, por tanto, un acto de valor.” — Paulo Freire
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dayeli Macas - Tecnología Educativa en Educación Superior</p>
+  </footer>
+</body>
+</html>
